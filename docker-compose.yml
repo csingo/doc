@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  vlog:
+    container_name: csingo-doc
+    image: cxy1620541673/gitbook:0.0.2
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/www
+    command:
+      - /bin/sh
+      - -c
+      - |
+        rm -rf src/_book
+        rm -rf dist
+        rm -rf README.md
+        rm -rf SUMMARY.md
+        ls -al
+        gitbook init src
+        gitbook install src
+        gitbook build src dist
+        ls -al
+        gitbook serve src

@@ -1,0 +1,39 @@
+{
+    "title": "csingo 文档中心",
+    "author": "Joe Chan",
+    "language": "zh-hans",
+    "gitbook": ">=2.0.0",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-pro",
+        "summary",
+        "splitter",
+        "code",
+        "copy-code-button",
+        "expandable-chapters",
+        "expandable-chapters-small",
+        "anchor-navigation-ex",
+        "yahei",
+        "accordion",
+        "popup"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
+        "summary": {
+            "excludeDir": [
+                "img",
+                "styles"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "fontSettings": {
+            "family": "msyh",
+            "size": 2
+        }
+    }
+}
