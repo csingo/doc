@@ -1,13 +1,16 @@
 version: "3"
 
 services:
-  vlog:
+  csingo-doc:
     container_name: csingo-doc
     image: cxy1620541673/gitbook:0.0.2
     ports:
       - 4000:4000
     volumes:
       - ./:/www
+    stdin_open: true
+    tty: true
+    privileged: true
     command:
       - /bin/sh
       - -c
