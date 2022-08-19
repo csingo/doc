@@ -85,6 +85,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="2.5 协程上下文.html" />
+    
     
     <link rel="prev" href="2.3 配置.html" />
     
@@ -254,6 +256,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.5" data-path="2.5 协程上下文.html">
+            
+                <a href="2.5 协程上下文.html">
+            
+                    
+                    2.5 协程上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -325,12 +340,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="../3 基础功能/3.5 请求.html">
+        <li class="chapter " data-level="1.4.5" data-path="../3 基础功能/3.5 应用服务.html">
             
-                <a href="../3 基础功能/3.5 请求.html">
+                <a href="../3 基础功能/3.5 应用服务.html">
             
                     
-                    3.5 请求
+                    3.5 应用服务
             
                 </a>
             
@@ -338,12 +353,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="../3 基础功能/3.6 应用服务.html">
+        <li class="chapter " data-level="1.4.6" data-path="../3 基础功能/3.6 领域服务.html">
             
-                <a href="../3 基础功能/3.6 应用服务.html">
+                <a href="../3 基础功能/3.6 领域服务.html">
             
                     
-                    3.6 应用服务
+                    3.6 领域服务
             
                 </a>
             
@@ -351,12 +366,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="../3 基础功能/3.7 领域服务.html">
+        <li class="chapter " data-level="1.4.7" data-path="../3 基础功能/3.7 数据仓库.html">
             
-                <a href="../3 基础功能/3.7 领域服务.html">
+                <a href="../3 基础功能/3.7 数据仓库.html">
             
                     
-                    3.7 领域服务
+                    3.7 数据仓库
             
                 </a>
             
@@ -364,12 +379,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="../3 基础功能/3.8 数据仓库.html">
+        <li class="chapter " data-level="1.4.8" data-path="../3 基础功能/3.8 模型.html">
             
-                <a href="../3 基础功能/3.8 数据仓库.html">
+                <a href="../3 基础功能/3.8 模型.html">
             
                     
-                    3.8 数据仓库
+                    3.8 模型
             
                 </a>
             
@@ -377,12 +392,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.9" data-path="../3 基础功能/3.9 模型.html">
+        <li class="chapter " data-level="1.4.9" data-path="../3 基础功能/3.9 任务命令.html">
             
-                <a href="../3 基础功能/3.9 模型.html">
+                <a href="../3 基础功能/3.9 任务命令.html">
             
                     
-                    3.9 模型
+                    3.9 任务命令
             
                 </a>
             
@@ -390,12 +405,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.10" data-path="../3 基础功能/3.10 响应.html">
+        <li class="chapter " data-level="1.4.10" data-path="../3 基础功能/3.10 请求.html">
             
-                <a href="../3 基础功能/3.10 响应.html">
+                <a href="../3 基础功能/3.10 请求.html">
             
                     
-                    3.10 响应
+                    3.10 请求
             
                 </a>
             
@@ -403,12 +418,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.11" data-path="../3 基础功能/3.11 异常.html">
+        <li class="chapter " data-level="1.4.11" data-path="../3 基础功能/3.11 响应.html">
             
-                <a href="../3 基础功能/3.11 异常.html">
+                <a href="../3 基础功能/3.11 响应.html">
             
                     
-                    3.11 异常
+                    3.11 响应
             
                 </a>
             
@@ -416,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.12" data-path="../3 基础功能/3.12 任务命令.html">
+        <li class="chapter " data-level="1.4.12" data-path="../3 基础功能/3.12 异常.html">
             
-                <a href="../3 基础功能/3.12 任务命令.html">
+                <a href="../3 基础功能/3.12 异常.html">
             
                     
-                    3.12 任务命令
+                    3.12 异常
             
                 </a>
             
@@ -608,7 +623,96 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;&#x6CE8;&#x5165;"><b></b>&#x5BB9;&#x5668;&#x6CE8;&#x5165;</a></li><ul><li><span class="title-icon "></span><a href="#autoload-&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><b></b>autoload &#x76EE;&#x5F55;&amp;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;"><b></b>&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x5165;--&#x83B7;&#x53D6;"><b></b>&#x6CE8;&#x5165; &amp; &#x83B7;&#x53D6;</a></li></ul></ul></div><a href="#&#x5BB9;&#x5668;&#x6CE8;&#x5165;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5BB9;&#x5668;&#x6CE8;&#x5165;"><a name="&#x5BB9;&#x5668;&#x6CE8;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x6CE8;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;&#x6CE8;&#x5165;</h1>
+<ul>
+<li>&#x5728; <strong>csingo</strong> &#x6846;&#x67B6;&#x4E2D;&#x5F15;&#x5165;&#x4E86; <strong>&#x5BB9;&#x5668;&#x6CE8;&#x5165;</strong> &#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x5B9E;&#x4F8B;&#x5316; <strong>ApplicationContainer</strong> struct&#xFF0C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684;&#x5BB9;&#x5668;&#x53D8;&#x91CF; <strong>app</strong>&#x3002;  </li>
+<li>&#x5728; <strong>app</strong> &#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x5B58;&#x50A8;&#x4E86;&#x6240;&#x6709;&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4EE5;&#x6B64;&#x5B9E;&#x73B0;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x6846;&#x67B6;&#x4E2D;&#x7684; <strong>Controller</strong>, <strong>Service</strong>, <strong>Domain</strong>, <strong>Middleware</strong>, <strong>Command</strong>, <strong>Validator</strong>, <strong>Config</strong> &#x90FD;&#x5DF2;&#x7ECF;&#x5728; autoload &#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x6CE8;&#x5165;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x4F7F;&#x7528; csingo &#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x3002;</li>
+</ul>
+<h2 id="autoload-&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><a name="autoload-&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#autoload-&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>autoload &#x76EE;&#x5F55;&amp;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</h2>
+<ul>
+<li><strong>Loader.go</strong> &#x5168;&#x5C40;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x5F15;&#x5165;&#x5404;&#x6A21;&#x5757;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x65B9;&#x6CD5;&#x8C03;&#x7528;</li>
+<li><strong>Command.go</strong> &#x4EFB;&#x52A1;&#x547D;&#x4EE4;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Command</li>
+<li><strong>Config.go</strong> &#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;config&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x914D;&#x7F6E;</li>
+<li><strong>Controller.go</strong> &#x63A7;&#x5236;&#x5668;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Controller</li>
+<li><strong>Validator.go</strong> &#x9A8C;&#x8BC1;&#x5668;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Validator</li>
+<li><strong>Middleware.go</strong> &#x4E2D;&#x95F4;&#x4EF6;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Middleware</li>
+<li><strong>Service.go</strong> &#x5E94;&#x7528;&#x670D;&#x52A1;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Service</li>
+<li><strong>Domain.go</strong> &#x9886;&#x57DF;&#x670D;&#x52A1;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7684;Domain</li>
+</ul>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x53D8;&#x91CF;</h2>
+<ul>
+<li>&#x5728; <strong>autoload</strong> &#x6587;&#x4EF6;&#x5939;&#x5185;&#x65B0;&#x589E;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x5982;&#xFF1A;Test.go</li>
+<li>&#x5728;&#x65B0;&#x589E;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;&#x5B9A;&#x4E49;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x6CE8;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x91CF; xxx.Y</li>
+</ul>
+<pre><code class="lang-golang"><span class="hljs-keyword">package</span> autoload
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;demo/xxx&quot;</span>
+    <span class="hljs-string">&quot;gitee.com/csingo/cServer&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> InjectTest() {
+    cServer.Inject(xxx.Y)
+}
+</code></pre>
+<h2 id="&#x6CE8;&#x5165;--&#x83B7;&#x53D6;"><a name="&#x6CE8;&#x5165;--&#x83B7;&#x53D6;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x5165;--&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x5165; &amp; &#x83B7;&#x53D6;</h2>
+<ul>
+<li>&#x6CE8;&#x5165;</li>
+</ul>
+<pre><code class="lang-golang"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;gitee.com/csingo/cServer&quot;</span>
+cServer.Inject(xxx)
+</code></pre>
+<ul>
+<li>&#x83B7;&#x53D6;</li>
+</ul>
+<p>&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5047;&#x8BBE;&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x4F4D;&#x4E8E;&#x5305; xxx/yyy &#x4E2D;&#xFF0C;&#x4E14;struct&#x540D;&#x4E3A; zzz&#x3002;&#x5373;&#x4EE5;&#x201C;&#x5305;&#x540D; + / + &#x7ED3;&#x6784;&#x4F53;&#x540D;&#x201D;&#x4E3A;&#x6807;&#x8BC6;&#x7B26;&#x8FDB;&#x884C;&#x53D8;&#x91CF;&#x83B7;&#x53D6;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;gitee.com/csingo/cServer&quot;</span>
+cServer.GetInstance(<span class="hljs-string">&quot;xxx/yyy/zzz&quot;</span>)
+</code></pre>
+<ul>
+<li>&#x5B9E;&#x73B0;&#x7EC6;&#x8282;</li>
+</ul>
+<pre><code class="lang-golang"><span class="hljs-keyword">package</span> cServer
+
+<span class="hljs-keyword">type</span> ServerContainer <span class="hljs-keyword">struct</span> {
+    Lock      *sync.Mutex
+    Instances <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}
+}
+
+<span class="hljs-keyword">func</span> (i *ServerContainer) Save(instance <span class="hljs-keyword">interface</span>{}) {
+    i.Lock.Lock()
+    <span class="hljs-keyword">defer</span> i.Lock.Unlock()
+
+    name := reflect.TypeOf(instance).Elem().Name()
+    path := reflect.TypeOf(instance).Elem().PkgPath()
+    index := path + <span class="hljs-string">&quot;/&quot;</span> + name
+    <span class="hljs-keyword">if</span> i.Instances == <span class="hljs-literal">nil</span> {
+        i.Instances = <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{})
+    }
+    i.Instances[index] = instance
+}
+
+<span class="hljs-keyword">func</span> (i *ServerContainer) Get(index <span class="hljs-keyword">string</span>) <span class="hljs-keyword">interface</span>{} {
+    i.Lock.Lock()
+    <span class="hljs-keyword">defer</span> i.Lock.Unlock()
+
+    <span class="hljs-keyword">if</span> _, ok := i.Instances[index]; ok {
+        <span class="hljs-keyword">return</span> i.Instances[index]
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+    }
+}
+
+<span class="hljs-keyword">func</span> Inject(instance <span class="hljs-keyword">interface</span>{}) {
+    container.Save(instance)
+}
+
+<span class="hljs-keyword">func</span> GetInstance(index <span class="hljs-keyword">string</span>) <span class="hljs-keyword">interface</span>{} {
+    <span class="hljs-keyword">return</span> container.Get(index)
+}
+</code></pre>
+
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
@@ -636,10 +740,14 @@
 
             
                 
-                <a href="2.3 配置.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.3 配置">
+                <a href="2.3 配置.html" class="navigation navigation-prev " aria-label="Previous page: 2.3 配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="2.5 协程上下文.html" class="navigation navigation-next " aria-label="Next page: 2.5 协程上下文">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -648,7 +756,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.4 容器注入","level":"1.3.4","depth":2,"next":{"title":"3 基础功能","level":"1.4","depth":1,"ref":"","articles":[{"title":"3.1 路由","level":"1.4.1","depth":2,"path":"csingo/3 基础功能/3.1 路由.md","ref":"csingo/3 基础功能/3.1 路由.md","articles":[]},{"title":"3.2 控制器","level":"1.4.2","depth":2,"path":"csingo/3 基础功能/3.2 控制器.md","ref":"csingo/3 基础功能/3.2 控制器.md","articles":[]},{"title":"3.3 验证器","level":"1.4.3","depth":2,"path":"csingo/3 基础功能/3.3 验证器.md","ref":"csingo/3 基础功能/3.3 验证器.md","articles":[]},{"title":"3.4 中间件","level":"1.4.4","depth":2,"path":"csingo/3 基础功能/3.4 中间件.md","ref":"csingo/3 基础功能/3.4 中间件.md","articles":[]},{"title":"3.5 请求","level":"1.4.5","depth":2,"path":"csingo/3 基础功能/3.5 请求.md","ref":"csingo/3 基础功能/3.5 请求.md","articles":[]},{"title":"3.6 应用服务","level":"1.4.6","depth":2,"path":"csingo/3 基础功能/3.6 应用服务.md","ref":"csingo/3 基础功能/3.6 应用服务.md","articles":[]},{"title":"3.7 领域服务","level":"1.4.7","depth":2,"path":"csingo/3 基础功能/3.7 领域服务.md","ref":"csingo/3 基础功能/3.7 领域服务.md","articles":[]},{"title":"3.8 数据仓库","level":"1.4.8","depth":2,"path":"csingo/3 基础功能/3.8 数据仓库.md","ref":"csingo/3 基础功能/3.8 数据仓库.md","articles":[]},{"title":"3.9 模型","level":"1.4.9","depth":2,"path":"csingo/3 基础功能/3.9 模型.md","ref":"csingo/3 基础功能/3.9 模型.md","articles":[]},{"title":"3.10 响应","level":"1.4.10","depth":2,"path":"csingo/3 基础功能/3.10 响应.md","ref":"csingo/3 基础功能/3.10 响应.md","articles":[]},{"title":"3.11 异常","level":"1.4.11","depth":2,"path":"csingo/3 基础功能/3.11 异常.md","ref":"csingo/3 基础功能/3.11 异常.md","articles":[]},{"title":"3.12 任务命令","level":"1.4.12","depth":2,"path":"csingo/3 基础功能/3.12 任务命令.md","ref":"csingo/3 基础功能/3.12 任务命令.md","articles":[]},{"title":"3.13 日志","level":"1.4.13","depth":2,"path":"csingo/3 基础功能/3.13 日志.md","ref":"csingo/3 基础功能/3.13 日志.md","articles":[]}]},"previous":{"title":"2.3 配置","level":"1.3.3","depth":2,"path":"csingo/2 快速入门/2.3 配置.md","ref":"csingo/2 快速入门/2.3 配置.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","search-pro","splitter","code","copy-code-button","expandable-chapters","expandable-chapters-small","anchor-navigation-ex","yahei","accordion","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yahei":{},"summary":{"excludeDir":["img","styles"]},"splitter":{},"search-pro":{},"accordion":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Joe Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心","language":"zh-hans","gitbook":">=2.0.0"},"file":{"path":"csingo/2 快速入门/2.4 容器注入.md","mtime":"2022-08-18T09:27:01.727Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-19T02:13:02.633Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.4 容器注入","level":"1.3.4","depth":2,"next":{"title":"2.5 协程上下文","level":"1.3.5","depth":2,"path":"csingo/2 快速入门/2.5 协程上下文.md","ref":"csingo/2 快速入门/2.5 协程上下文.md","articles":[]},"previous":{"title":"2.3 配置","level":"1.3.3","depth":2,"path":"csingo/2 快速入门/2.3 配置.md","ref":"csingo/2 快速入门/2.3 配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","splitter","code","copy-code-button","expandable-chapters","expandable-chapters-small","anchor-navigation-ex","yahei","accordion","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yahei":{},"summary":{"excludeDir":["img","styles"]},"splitter":{},"search-pro":{},"accordion":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Joe Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心","language":"zh-hans","gitbook":">=2.0.0"},"file":{"path":"csingo/2 快速入门/2.4 容器注入.md","mtime":"2022-08-19T06:42:31.289Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-19T08:03:04.146Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
