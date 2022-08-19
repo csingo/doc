@@ -8,20 +8,17 @@ services:
       - 4000:4000
     volumes:
       - ./:/www
-    stdin_open: true
-    tty: true
-    privileged: true
     command:
       - /bin/sh
       - -c
       - |
         rm -rf src/_book
         rm -rf dist
-        rm -rf README.md
-        rm -rf SUMMARY.md
-        ls -al
-        gitbook init src
-        gitbook install src
+        # rm -rf README.md
+        # rm -rf SUMMARY.md
+        # ls -al
+        # gitbook init src
+        # gitbook install src
         gitbook build src dist
         ls -al
-        gitbook serve src
+        # gitbook serve src
