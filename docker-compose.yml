@@ -22,3 +22,4 @@ services:
         gitbook build src dist
         ls -al
         # gitbook serve src
+
