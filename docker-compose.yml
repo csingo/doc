@@ -14,11 +14,10 @@ services:
       - |
         rm -rf src/_book
         rm -rf dist
-        # rm -rf SUMMARY.md
-        # ls -al
-        # gitbook init src
-        # gitbook install src
+        ls -al
+        gitbook init src
+        gitbook install src
         gitbook build src dist
         ls -al
-        gitbook serve src
+        # gitbook serve src
 
