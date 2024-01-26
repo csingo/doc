@@ -20,5 +20,5 @@ services:
         # gitbook install src
         gitbook build src dist
         ls -al
-        # gitbook serve src
+        gitbook serve src
 
