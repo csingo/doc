@@ -14,7 +14,6 @@ services:
       - |
         rm -rf src/_book
         rm -rf dist
-        # rm -rf README.md
         # rm -rf SUMMARY.md
         # ls -al
         # gitbook init src
