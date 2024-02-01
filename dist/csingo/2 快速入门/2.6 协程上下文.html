@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.2 应用SDK · 文档中心</title>
+        <title>2.6 协程上下文 · 文档中心</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,8 +85,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="2.7 Proto使用技巧.html" />
     
-    <link rel="prev" href="5.1 HTTP-RPC.html" />
+    
+    <link rel="prev" href="2.5 依赖注入.html" />
     
 
     </head>
@@ -215,9 +217,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../2 快速入门/2.1 安装.html">
+        <li class="chapter " data-level="1.3.1" data-path="2.1 安装.html">
             
-                <a href="../2 快速入门/2.1 安装.html">
+                <a href="2.1 安装.html">
             
                     
                     2.1 安装
@@ -228,9 +230,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../2 快速入门/2.2 启动 & 打包.html">
+        <li class="chapter " data-level="1.3.2" data-path="2.2 启动 & 打包.html">
             
-                <a href="../2 快速入门/2.2 启动 & 打包.html">
+                <a href="2.2 启动 & 打包.html">
             
                     
                     2.2 启动 & 打包
@@ -241,9 +243,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../2 快速入门/2.3 配置.html">
+        <li class="chapter " data-level="1.3.3" data-path="2.3 配置.html">
             
-                <a href="../2 快速入门/2.3 配置.html">
+                <a href="2.3 配置.html">
             
                     
                     2.3 配置
@@ -254,9 +256,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../2 快速入门/2.4 容器.html">
+        <li class="chapter " data-level="1.3.4" data-path="2.4 容器.html">
             
-                <a href="../2 快速入门/2.4 容器.html">
+                <a href="2.4 容器.html">
             
                     
                     2.4 容器
@@ -267,9 +269,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../2 快速入门/2.5 依赖注入.html">
+        <li class="chapter " data-level="1.3.5" data-path="2.5 依赖注入.html">
             
-                <a href="../2 快速入门/2.5 依赖注入.html">
+                <a href="2.5 依赖注入.html">
             
                     
                     2.5 依赖注入
@@ -280,9 +282,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../2 快速入门/2.6 协程上下文.html">
+        <li class="chapter active" data-level="1.3.6" data-path="2.6 协程上下文.html">
             
-                <a href="../2 快速入门/2.6 协程上下文.html">
+                <a href="2.6 协程上下文.html">
             
                     
                     2.6 协程上下文
@@ -293,9 +295,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="../2 快速入门/2.7 Proto使用技巧.html">
+        <li class="chapter " data-level="1.3.7" data-path="2.7 Proto使用技巧.html">
             
-                <a href="../2 快速入门/2.7 Proto使用技巧.html">
+                <a href="2.7 Proto使用技巧.html">
             
                     
                     2.7 Proto使用技巧
@@ -584,9 +586,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="5.1 HTTP-RPC.html">
+        <li class="chapter " data-level="1.6.1" data-path="../5 微服务/5.1 HTTP-RPC.html">
             
-                <a href="5.1 HTTP-RPC.html">
+                <a href="../5 微服务/5.1 HTTP-RPC.html">
             
                     
                     5.1 HTTP RPC
@@ -597,9 +599,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="5.2 应用SDK.html">
+        <li class="chapter " data-level="1.6.2" data-path="../5 微服务/5.2 应用SDK.html">
             
-                <a href="5.2 应用SDK.html">
+                <a href="../5 微服务/5.2 应用SDK.html">
             
                     
                     5.2 应用SDK
@@ -645,7 +647,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >5.2 应用SDK</a>
+        <a href="../.." >2.6 协程上下文</a>
     </h1>
 </div>
 
@@ -660,7 +662,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;"><b></b>&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;</a></li><ul><li><span class="title-icon "></span><a href="#http-&#x4E0A;&#x4E0B;&#x6587;"><b></b>HTTP &#x4E0A;&#x4E0B;&#x6587;</a></li><li><span class="title-icon "></span><a href="#grpc-&#x4E0A;&#x4E0B;&#x6587;"><b></b>GRPC &#x4E0A;&#x4E0B;&#x6587;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;&#x7EC6;&#x8282;"><b></b>&#x5B9E;&#x73B0;&#x7EC6;&#x8282;</a></li></ul></ul></div><a href="#&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;"><a name="&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;" class="anchor-navigation-ex-anchor" href="#&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;</h1>
+<h2 id="http-&#x4E0A;&#x4E0B;&#x6587;"><a name="http-&#x4E0A;&#x4E0B;&#x6587;" class="anchor-navigation-ex-anchor" href="#http-&#x4E0A;&#x4E0B;&#x6587;"><i class="fa fa-link" aria-hidden="true"></i></a>HTTP &#x4E0A;&#x4E0B;&#x6587;</h2>
+<p>csingo &#x57FA;&#x4E8E; gin &#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5747;&#x4E3A; gin.Context &#x5B9E;&#x4F53;</p>
+<h2 id="grpc-&#x4E0A;&#x4E0B;&#x6587;"><a name="grpc-&#x4E0A;&#x4E0B;&#x6587;" class="anchor-navigation-ex-anchor" href="#grpc-&#x4E0A;&#x4E0B;&#x6587;"><i class="fa fa-link" aria-hidden="true"></i></a>GRPC &#x4E0A;&#x4E0B;&#x6587;</h2>
+<p>&#x7531;&#x4E8E; GRPC &#x4F7F;&#x7528;&#x7684;&#x662F; context &#x5305;&#x4E2D;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x63A5;&#x53E3; context.Context&#xFF0C;&#x5728; csingo &#x4E2D;&#x4F7F;&#x7528; GRPC &#x534F;&#x8BAE;&#x65F6;&#xFF0C;&#x4F1A;&#x6709;&#x4E13;&#x95E8;&#x7684;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#x8F6C;&#x6362;&#xFF0C;&#x5373; context.Context &#x4E0E; gin.Context &#x7684;&#x76F8;&#x4E92;&#x8F6C;&#x6362;&#x3002;<br>
+&#x5728; GRPC &#x534F;&#x8BAE;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528; metadata &#x643A;&#x5E26;&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;&#x4F20;&#x7ED9;&#x4E0B;&#x6E38;&#x670D;&#x52A1;&#xFF0C;&#x4E0B;&#x6E38;&#x670D;&#x52A1;&#x5728;&#x8F6C;&#x6362;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x628A;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x5230; gin.Context &#x7684; key-value &#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x53EF;&#x901A;&#x8FC7; get / set &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x7EC6;&#x8282;"><a name="&#x5B9E;&#x73B0;&#x7EC6;&#x8282;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x7EC6;&#x8282;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;&#x7EC6;&#x8282;</h2>
+<pre><code class="lang-golang">
+<span class="hljs-keyword">func</span> GinToGrpc(ctx *gin.Context) (c context.Context) {
+    <span class="hljs-keyword">var</span> md metadata.MD
+    data, ok := ctx.Get(cCommon.GRPC_Metadata)
+    <span class="hljs-keyword">if</span> ok {
+        md = data.(metadata.MD)
+    } <span class="hljs-keyword">else</span> {
+        md = <span class="hljs-built_in">make</span>(metadata.MD)
+    }
+
+    <span class="hljs-keyword">for</span> k, v := <span class="hljs-keyword">range</span> ctx.Keys {
+        <span class="hljs-keyword">if</span> cHelper.InArray(grpc_ignore_metadata_keys, k) {
+            <span class="hljs-keyword">continue</span>
+        }
+        md.Set(k, cHelper.ToString(v))
+    }
+
+    c = metadata.NewOutgoingContext(ctx, md)
+
+    <span class="hljs-keyword">return</span>
+}
+
+<span class="hljs-keyword">func</span> GrpcToGin(ctx context.Context) (c *gin.Context) {
+    c = New()
+    md, ok := metadata.FromIncomingContext(ctx)
+    <span class="hljs-keyword">if</span> ok {
+        <span class="hljs-keyword">for</span> k, v := <span class="hljs-keyword">range</span> md {
+            <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(v) &gt; <span class="hljs-number">0</span> {
+                c.Set(k, v[<span class="hljs-number">0</span>])
+            } <span class="hljs-keyword">else</span> {
+                c.Set(k, <span class="hljs-string">&quot;&quot;</span>)
+            }
+        }
+        c.Set(cCommon.GRPC_Metadata, md)
+        c.Set(cCommon.GRPC_Context, ctx)
+    }
+
+    <span class="hljs-keyword">return</span>
+}
+</code></pre>
+
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
@@ -688,10 +737,14 @@
 
             
                 
-                <a href="5.1 HTTP-RPC.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5.1 HTTP RPC">
+                <a href="2.5 依赖注入.html" class="navigation navigation-prev " aria-label="Previous page: 2.5 依赖注入">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="2.7 Proto使用技巧.html" class="navigation navigation-next " aria-label="Next page: 2.7 Proto使用技巧">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -700,7 +753,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2 应用SDK","level":"1.6.2","depth":2,"previous":{"title":"5.1 HTTP RPC","level":"1.6.1","depth":2,"path":"csingo/5 微服务/5.1 HTTP-RPC.md","ref":"csingo/5 微服务/5.1 HTTP-RPC.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","search-pro","splitter","code","copy-code-button","expandable-chapters","expandable-chapters-small","anchor-navigation-ex","yahei","accordion","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yahei":{},"summary":{"excludeDir":["img","styles"]},"splitter":{},"search-pro":{},"accordion":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Joe Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心","language":"zh-hans","gitbook":">=2.0.0"},"file":{"path":"csingo/5 微服务/5.2 应用SDK.md","mtime":"2023-12-13T02:52:56.573Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-01T02:22:50.003Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.6 协程上下文","level":"1.3.6","depth":2,"next":{"title":"2.7 Proto使用技巧","level":"1.3.7","depth":2,"path":"csingo/2 快速入门/2.7 Proto使用技巧.md","ref":"csingo/2 快速入门/2.7 Proto使用技巧.md","articles":[]},"previous":{"title":"2.5 依赖注入","level":"1.3.5","depth":2,"path":"csingo/2 快速入门/2.5 依赖注入.md","ref":"csingo/2 快速入门/2.5 依赖注入.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","splitter","code","copy-code-button","expandable-chapters","expandable-chapters-small","anchor-navigation-ex","yahei","accordion","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yahei":{},"summary":{"excludeDir":["img","styles"]},"splitter":{},"search-pro":{},"accordion":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Joe Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心","language":"zh-hans","gitbook":">=2.0.0"},"file":{"path":"csingo/2 快速入门/2.6 协程上下文.md","mtime":"2024-01-26T03:10:16.439Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-01T02:22:50.003Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
