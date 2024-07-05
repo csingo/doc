@@ -4,6 +4,7 @@
     "language": "zh-hans",
     "gitbook": ">=2.0.0",
     "plugins": [
+        "theme-fexa",
         "-lunr",
         "-search",
         "search-pro",
@@ -18,8 +19,8 @@
         "popup"
     ],
     "pluginsConfig": {
-        "theme-default": {
-            "showLevel": false
+        "theme-fexa": {
+            "logo": "/logo.png"
         },
         "summary": {
             "excludeDir": [

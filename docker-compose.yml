@@ -18,6 +18,8 @@ services:
         gitbook init src
         gitbook install src
         gitbook build src docs
+        cp csingo.png docs/gitbook/gitbook-plugin-theme-fexa/logo.png
+        # cp csingo.png src/_book/gitbook/gitbook-plugin-theme-fexa/logo.png
         ls -al
         # gitbook serve src
 
