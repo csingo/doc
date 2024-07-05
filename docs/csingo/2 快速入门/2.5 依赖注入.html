@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.5 依赖注入 · 文档中心</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Joe Chan">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.6 协程上下文.html" />
+    
+    
+    <link rel="prev" href="2.4 容器.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Csingo</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 前言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1 前言/1.1 项目介绍.html">
+            
+                <a href="../1 前言/1.1 项目介绍.html">
+            
+                    
+                    1.1 项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1 前言/1.2 编程须知.html">
+            
+                <a href="../1 前言/1.2 编程须知.html">
+            
+                    
+                    1.2 编程须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1 前言/1.3 性能压测.html">
+            
+                <a href="../1 前言/1.3 性能压测.html">
+            
+                    
+                    1.3 性能压测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1 前言/1.4 版本更新.html">
+            
+                <a href="../1 前言/1.4 版本更新.html">
+            
+                    
+                    1.4 版本更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 快速入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1 安装.html">
+            
+                <a href="2.1 安装.html">
+            
+                    
+                    2.1 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2 启动 & 打包.html">
+            
+                <a href="2.2 启动 & 打包.html">
+            
+                    
+                    2.2 启动 & 打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2.3 配置.html">
+            
+                <a href="2.3 配置.html">
+            
+                    
+                    2.3 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="2.4 容器.html">
+            
+                <a href="2.4 容器.html">
+            
+                    
+                    2.4 容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="2.5 依赖注入.html">
+            
+                <a href="2.5 依赖注入.html">
+            
+                    
+                    2.5 依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="2.6 协程上下文.html">
+            
+                <a href="2.6 协程上下文.html">
+            
+                    
+                    2.6 协程上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="2.7 Proto使用技巧.html">
+            
+                <a href="2.7 Proto使用技巧.html">
+            
+                    
+                    2.7 Proto使用技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3 基础功能/3.1 路由.html">
+            
+                <a href="../3 基础功能/3.1 路由.html">
+            
+                    
+                    3.1 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3 基础功能/3.2 控制器.html">
+            
+                <a href="../3 基础功能/3.2 控制器.html">
+            
+                    
+                    3.2 控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3 基础功能/3.3 验证器.html">
+            
+                <a href="../3 基础功能/3.3 验证器.html">
+            
+                    
+                    3.3 验证器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3 基础功能/3.4 中间件.html">
+            
+                <a href="../3 基础功能/3.4 中间件.html">
+            
+                    
+                    3.4 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3 基础功能/3.5 应用服务.html">
+            
+                <a href="../3 基础功能/3.5 应用服务.html">
+            
+                    
+                    3.5 应用服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3 基础功能/3.6 领域服务.html">
+            
+                <a href="../3 基础功能/3.6 领域服务.html">
+            
+                    
+                    3.6 领域服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3 基础功能/3.7 模型.html">
+            
+                <a href="../3 基础功能/3.7 模型.html">
+            
+                    
+                    3.7 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3 基础功能/3.8 任务命令.html">
+            
+                <a href="../3 基础功能/3.8 任务命令.html">
+            
+                    
+                    3.8 任务命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3 基础功能/3.9 请求.html">
+            
+                <a href="../3 基础功能/3.9 请求.html">
+            
+                    
+                    3.9 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3 基础功能/3.10 响应.html">
+            
+                <a href="../3 基础功能/3.10 响应.html">
+            
+                    
+                    3.10 响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3 基础功能/3.11 异常.html">
+            
+                <a href="../3 基础功能/3.11 异常.html">
+            
+                    
+                    3.11 异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../3 基础功能/3.12 日志.html">
+            
+                <a href="../3 基础功能/3.12 日志.html">
+            
+                    
+                    3.12 日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 组件库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4 组件库/4.1 配置中心.html">
+            
+                <a href="../4 组件库/4.1 配置中心.html">
+            
+                    
+                    4.1 配置中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4 组件库/4.2 Proto.html">
+            
+                <a href="../4 组件库/4.2 Proto.html">
+            
+                    
+                    4.2 Proto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4 组件库/4.3 Redis.html">
+            
+                <a href="../4 组件库/4.3 Redis.html">
+            
+                    
+                    4.3 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4 组件库/4.4 Kafka.html">
+            
+                <a href="../4 组件库/4.4 Kafka.html">
+            
+                    
+                    4.4 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4 组件库/4.4 RabbitMQ.html">
+            
+                <a href="../4 组件库/4.4 RabbitMQ.html">
+            
+                    
+                    4.4 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 微服务
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5 微服务/5.1 HTTP-RPC.html">
+            
+                <a href="../5 微服务/5.1 HTTP-RPC.html">
+            
+                    
+                    5.1 HTTP RPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5 微服务/5.2 应用SDK.html">
+            
+                <a href="../5 微服务/5.2 应用SDK.html">
+            
+                    
+                    5.2 应用SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.5 依赖注入</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4F9D;&#x8D56;&#x6CE8;&#x5165;"><b></b>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</a></li><ul><li><span class="title-icon "></span><a href="#1-&#x7B80;&#x4ECB;"><b></b>1. &#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#2-&#x4F5C;&#x7528;"><b></b>2. &#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#3-&#x4F7F;&#x7528;"><b></b>3. &#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#31-&#x8BF4;&#x660E;"><b></b>3.1 &#x8BF4;&#x660E;</a></li></ul><li><span class="title-icon "></span><a href="#32-&#x8BE6;&#x60C5;"><b></b>3.2 &#x8BE6;&#x60C5;</a></li></ul></ul></div><a href="#&#x4F9D;&#x8D56;&#x6CE8;&#x5165;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4F9D;&#x8D56;&#x6CE8;&#x5165;"><a name="&#x4F9D;&#x8D56;&#x6CE8;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x4F9D;&#x8D56;&#x6CE8;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</h1>
+<h2 id="1-&#x7B80;&#x4ECB;"><a name="1-&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#1-&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7B80;&#x4ECB;</h2>
+<p>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF08;Dependency Injection&#xFF0C;&#x7B80;&#x79F0;DI&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x7684;&#x6838;&#x5FC3;&#x7406;&#x5FF5;&#x662F;&#x5C06;&#x5BF9;&#x8C61;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x5916;&#x90E8;&#x7EC4;&#x4EF6;&#x4ECE;&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x79FB;&#x81F3;&#x5BF9;&#x8C61;&#x5916;&#x90E8;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x4E0E;&#x88C5;&#x914D;&#x3002;&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x5982;&#x679C;&#x9700;&#x8981;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x800C;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x5219;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#xFF08;&#x5982;&#x6784;&#x9020;&#x5668;&#x3001;setter&#x65B9;&#x6CD5;&#x6216;&#x6CE8;&#x89E3;&#x7B49;&#xFF09;&#xFF0C;&#x7531;&#x5916;&#x90E8;&#x5BB9;&#x5668;&#x8D1F;&#x8D23;&#x4E3A;&#x4F9D;&#x8D56;&#x7C7B;&#x63D0;&#x4F9B;&#x6240;&#x9700;&#x670D;&#x52A1;&#x7684;&#x5B9E;&#x4F8B;&#x3002;<br></p>
+<p>&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x5B9E;&#x73B0;&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#xFF08;Inversion of Control, IoC&#xFF09;&#x7684;&#x4E00;&#x79CD;&#x5177;&#x4F53;&#x624B;&#x6BB5;&#xFF0C;IoC&#x662F;&#x6307;&#x7A0B;&#x5E8F;&#x7684;&#x63A7;&#x5236;&#x6D41;&#x7531;&#x4F20;&#x7EDF;&#x7684;&#x65B9;&#x5F0F;&#xFF08;&#x5373;&#x5BF9;&#x8C61;&#x4E3B;&#x52A8;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#xFF09;&#x53CD;&#x8F6C;&#x4E3A;&#x7531;&#x5BB9;&#x5668;&#x6216;&#x6846;&#x67B6;&#x6765;&#x63A7;&#x5236;&#x5BF9;&#x8C61;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x53CA;&#x76F8;&#x4E92;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<h2 id="2-&#x4F5C;&#x7528;"><a name="2-&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#2-&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x4F5C;&#x7528;</h2>
+<p>&#x901A;&#x8FC7;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4EE5;&#x4E0B;&#x76EE;&#x6807;&#xFF1A;</p>
+<ul>
+<li><strong>&#x677E;&#x8026;&#x5408;</strong>&#xFF1A;&#x51CF;&#x5C11;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x76F4;&#x63A5;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x4F7F;&#x5F97;&#x6A21;&#x5757;&#x66F4;&#x6613;&#x4E8E;&#x72EC;&#x7ACB;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x548C;&#x91CD;&#x7528;&#x3002;</li>
+<li><strong>&#x53EF;&#x6D4B;&#x8BD5;&#x6027;&#x589E;&#x5F3A;</strong>&#xFF1A;&#x7531;&#x4E8E;&#x4F9D;&#x8D56;&#x9879;&#x53EF;&#x4EE5;&#x4ECE;&#x5916;&#x90E8;&#x6CE8;&#x5165;&#x6A21;&#x62DF;&#x5BF9;&#x8C61;&#xFF08;mock objects&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5728;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x4E2D;&#x66F4;&#x5BB9;&#x6613;&#x5730;&#x9694;&#x79BB;&#x88AB;&#x6D4B;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><strong>&#x914D;&#x7F6E;&#x7075;&#x6D3B;&#x6027;</strong>&#xFF1A;&#x4F9D;&#x8D56;&#x7684;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x8FD0;&#x884C;&#x65F6;&#x73AF;&#x5883;&#x52A8;&#x6001;&#x8C03;&#x6574;&#xFF0C;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x5C31;&#x80FD;&#x6539;&#x53D8;&#x7CFB;&#x7EDF;&#x7684;&#x884C;&#x4E3A;&#x3002;</li>
+</ul>
+<h2 id="3-&#x4F7F;&#x7528;"><a name="3-&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#3-&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x4F7F;&#x7528;</h2>
+<h3 id="31-&#x8BF4;&#x660E;"><a name="31-&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#31-&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 &#x8BF4;&#x660E;</h3>
+<ul>
+<li>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#x5DF2;&#x7ECF;&#x6CE8;&#x5165;&#x5BB9;&#x5668;&#x7684;&#x5B9E;&#x4F53;&#xFF0C;&#x5373;&#x6CE8;&#x5165;&#x5BB9;&#x5668;&#x7684;&#x5B9E;&#x4F53;&#x624D;&#x80FD;&#x6CE8;&#x5165;&#x4F9D;&#x8D56;&#x548C;&#x88AB;&#x6CE8;&#x5165;&#x4F9D;&#x8D56;&#x3002;</li>
+<li>&#x88AB;&#x6CE8;&#x5165;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x5F00;&#x653E;&#x7684;&#xFF0C;&#x5373;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#x3002;</li>
+<li>&#x88AB;&#x6CE8;&#x5165;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x5B9E;&#x4F53;&#x7C7B;&#x578B;&#x65E0;&#x6CD5;&#x6CE8;&#x5165;&#xFF0C;&#x5373; <strong>*</strong> &#x5F00;&#x5934;</li>
+</ul>
+<h2 id="32-&#x8BE6;&#x60C5;"><a name="32-&#x8BE6;&#x60C5;" class="anchor-navigation-ex-anchor" href="#32-&#x8BE6;&#x60C5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 &#x8BE6;&#x60C5;</h2>
+<pre><code class="lang-golang"><span class="hljs-keyword">type</span> HelloController <span class="hljs-keyword">struct</span> {
+    Svc *service.HelloService
+}
+
+<span class="hljs-keyword">func</span> (i *HelloController) Hello(ctx *gin.Context) (err error) {
+    _, err := i.Svc.Hello(ctx, <span class="hljs-literal">nil</span>)
+    <span class="hljs-keyword">return</span>
+}
+</code></pre>
+<p>&#x5982;&#x4E0A;&#xFF0C;<strong><em>HelloController</em></strong> &#x548C; <strong><em>HelloService</em></strong> &#x5FC5;&#x987B;&#x90FD;&#x5DF2;&#x7ECF;&#x6CE8;&#x5165;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x624D;&#x80FD;&#x5728; <strong><em>HelloController</em></strong> &#x4E2D;&#x6CE8;&#x5165; <strong><em>HelloService</em></strong>&#xFF0C;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x4E0D;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x5931;&#x8D25;&#x3002;<br>
+&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x5BB9;&#x5668;&#x5185;&#x5404;&#x5B9E;&#x4F53;&#x7684;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x65E0;&#x9700;&#x624B;&#x52A8;&#x5E72;&#x9884;&#x3002;<br>
+&#x4F7F;&#x7528;&#x53EA;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5373;&#x53EF;&#xFF0C;&#x65E0;&#x9700;&#x624B;&#x52A8;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.4 容器.html" class="navigation navigation-prev " aria-label="Previous page: 2.4 容器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.6 协程上下文.html" class="navigation navigation-next " aria-label="Next page: 2.6 协程上下文">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.5 依赖注入","level":"1.3.5","depth":2,"next":{"title":"2.6 协程上下文","level":"1.3.6","depth":2,"path":"csingo/2 快速入门/2.6 协程上下文.md","ref":"csingo/2 快速入门/2.6 协程上下文.md","articles":[]},"previous":{"title":"2.4 容器","level":"1.3.4","depth":2,"path":"csingo/2 快速入门/2.4 容器.md","ref":"csingo/2 快速入门/2.4 容器.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","splitter","code","copy-code-button","expandable-chapters","expandable-chapters-small","anchor-navigation-ex","yahei","accordion","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yahei":{},"summary":{"excludeDir":["img","styles"]},"splitter":{},"search-pro":{},"accordion":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Joe Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心","language":"zh-hans","gitbook":">=2.0.0"},"file":{"path":"csingo/2 快速入门/2.5 依赖注入.md","mtime":"2024-02-01T02:49:13.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-05T06:40:09.164Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
